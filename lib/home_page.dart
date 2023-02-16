@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:week_17_assessment_bottom_nav/account_page.dart';
+import 'package:week_17_assessment_bottom_nav/profile_page.dart';
 import 'package:week_17_assessment_bottom_nav/settings_page.dart';
 
 
@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
       body: IndexedStack(
         children: [
           HomeScreen(),
-          AccountPage(),
+          ProfilePage(),
           SettingsPage()
         ],
         index: _currentIndex,
@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
           ),
           BottomNavigationBarItem(
               icon: Icon(Icons.account_circle),
-            label: "Account"
+            label: "Profile"
           ),
           BottomNavigationBarItem(
               icon: Icon(Icons.settings),
